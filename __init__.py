@@ -44,6 +44,17 @@ def list_unique_characters(browser):
         file.write(",".join(unique_characters))
         tooltip(header + f"{len(unique_characters)} unique Chinese characters saved to {file_path}")
     
+def generate_phrases(browser):
+    
+    # Get the selected notes
+    selected_cards = browser.selectedCards()
+
+    # Check if any cards are selected
+    if testCardSelect(selected_cards): return
+
+    unique_characters = getUniqueCharacters(selected_cards, chineseOnly=True)
+
+
 # Create a new menu item
 def on_context_menu(browser, menu):
     action = QAction("List and save unique characters", browser)
