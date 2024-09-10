@@ -1,0 +1,263 @@
+/*Main Card Settings*/
+.card {
+  font-family: 'Hiragino Kaku Gothic Pro', 'WenQuanYi Zen Hei', '微軟正黑體', '蘋果儷中黑', Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: black;
+  background-color: #1fc8db;
+  background-attachment: fixed;
+  background-size: cover, cover, cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  word-wrap: break-word;
+ }
+ .mobile .card{
+  background-attachment: fixed;
+  background-size: cover, cover, cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+ }
+ .android .card{
+  background-attachment: fixed;
+  background-size: cover, 100% 1980px, 100% 1980px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+ }
+ /*Chinese Specific font formatting*/
+ .chinese {padding-bottom: 5px;}
+ .win .chinese { font-family: "MS Mincho", "ＭＳ 明朝"; }
+ .mac .chinese { }
+ .linux .chinese { font-family: "Kochi Mincho", "東風明朝"; }
+ .mobile .chinese { font-family: "Hiragino Mincho ProN"; }
+ 
+ /*Title Formatting */
+ .title{
+ color: rgba(255, 255, 255, 0.9);
+ text-align: left;
+ font-size: 20px;
+ padding-bottom:40px;
+ margin-top: -15px;
+ }
+ 
+ /*Tone Colours*/
+ .tone1 {color: red;}
+ .tone2 {color: orange;}
+ .tone3 {color: green;}
+ .tone4 {color: blue;}
+ .tone5 {color: gray;}
+ 
+ /*Transliteration formatting*/
+ .reading {
+  font-size: 25px;
+  line-height: 5px;
+ padding-top:15px;
+  padding-bottom: 20px;
+ }
+ 
+ /*Bounding box that holds Hanzi and reading, as well as Cloze input*/
+ .frontbg {
+  background-color: rgba(77, 192, 181, 0.81);
+  border-radius: 7px;
+  color: #000000;
+  position: relative;
+  top: -25px;
+  font-size: 30px;
+  left: 0;
+ }
+ 
+ /*Answer Background box*/
+ .backbg {
+  position: relative;
+  top: -28px;
+  background-color: rgba(255,255,255,0.75);
+  padding: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 0px 0px 10px 10px; 
+  color: #016ea6;
+  font-size: 16px;
+  text-align: left;
+ }
+ 
+ /* Notes and strokes formatting */
+ .notes {
+  position: relative;
+  top: 5px;
+  color: #18adab;
+  font-size: 16px;
+  width: auto;
+  padding-top: 0px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  margin-bottom: 5px;
+ }
+ .personal {
+  color: #138a88;
+  padding-top: 0px;
+ }
+ .tags {
+  color:rgba(32,32,32,0.6);
+  text-align:right;
+  font-size:10pt;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  width: 50%;
+ }
+ .others {
+  position: relative;
+  top: 15px;
+  border: 1px dotted #72c8e1;
+  color: #18adab;
+  font-size: 20px;
+  width: auto;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  margin-bottom: 35px;
+ }
+ 
+ /*Misc formatting */
+ .nomedia {padding-bottom: 35px;}
+ .front {padding-bottom: 45px}
+ u {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+ }
+ .hidden{
+ visibility: hidden;
+ }
+ 
+ /*Images Formatting*/
+ .logo{
+     position: absolute;
+     top: 2px;
+     left: 2px;
+     width: 200px;
+     opacity:0.5;
+ }
+ img.animated-gif{
+   width: 20%;
+   height: auto;
+ }
+ 
+ /*Replay Audio button formatting*/
+ [name="play-button"] {
+   max-width: 70%;
+   left: 50%;
+   position: absolute;
+   top: 50%;
+   transform: translate(-50%, -50%);
+ }
+ .circle-wrap {
+   background: none;
+   overflow: hidden;
+   position: relative;
+   height: 50px;
+   width: 50px;
+   z-index: 20;
+ }
+   .play-button-circle {
+   fill: green;
+ }
+ .play-button-triangle {
+   fill: rgba(255,255,255,0.8);
+ }
+ 
+ /*Replay Audio message formatting*/
+ #message{
+ font-size: 15px;
+ font-weight: bold;
+ color: rgba(255,255,255,1);
+ text-shadow: 1px 1px rgba(0,0,0,0.9);
+ }
+ 
+ /*Night Mode Specific Formatting*/
+ .card.night_mode {
+  color: rgba(191,191,191,0.5);
+  font-size: 50px;
+  background-color: #1fc8db;
+  background-attachment: fixed;
+  background-size: cover, 100% 1980px, 100% 1980px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+ } 
+ .card.night_mode .title{
+ color: rgba(191,191,191,1) !important;
+ }
+ .card.night_mode .tone1 {color: darkred !important;}
+ .card.night_mode .tone2 {color: darkorange !important;}
+ .card.night_mode .tone3 {color: darkgreen !important;}
+ .card.night_mode .tone4 {color: darkblue !important;}
+ .card.night_mode .tone5 {color: darkgray !important;}
+ .card.night_mode .frontbg {
+  background-color: rgba(42, 121, 113, 0.81) !important;
+  color: rgba(191,191,191,1) !important;
+ }
+ .card.night_mode .backbg {
+  background-color: rgba(191,191,191,0.75) !important;
+  color: rgba(11, 81, 80, 1) !Important;
+ }
+ .card.night_mode .notes {
+  color: rgba(11, 81, 80, 1) !Important;
+ }
+ .card.night_mode .personal {
+  color: rgba(11, 81, 80, 1) !Important;
+ }
+ .card.night_mode .tags {
+  color:rgba(32,32,32,0.9);
+ }
+ .card.night_mode .others {
+  border: 1px dotted rgba(11, 81, 80, 1) !Important;
+  color: #18adab;
+ }
+ .card.night_mode img.animated-gif{
+   opacity: 0.6;
+ } 
+ .card.night_mode   .play-button-circle {
+   fill: darkgreen;
+ }
+ .card.night_mode .play-button-triangle {
+   fill: rgba(191,191,191,0.8);
+ }
+ .card.night_mode .typeGood{
+ color: rgba(191,191,191,1);
+ background-color: darkgreen;
+ }
+ .card.night_mode .typeBad{
+   color: rgba(191,191,191,1);
+   background-color: darkred;
+ }
+ .card.night_mode .typeMissed{
+   color: rgba(191,191,191,1);
+   background-color: darkgrey;
+ }
+ 
+ /*Cloze Specific formatting*/
+ code#typeans { font-family: 'Hiragino Kaku Gothic Pro', 'WenQuanYi Zen Hei', '微軟正黑體', '蘋果儷中黑', Helvetica, Arial, sans-serif;;
+ font-size:30px;
+  }
+ input#typeans{
+ font-size: 30px;
+ font-family: "MS Mincho", "ＭＳ 明朝";
+ }
+ input[type=text] {
+     border: none;
+     border-bottom: 2px solid rgba(255,255,255,0.5);
+     background-color: rgba(0,0,0,0);
+     color: white;
+     text-align:center;
+ }
+ input[type=text]:focus {
+     outline: none;
+ }
+ ::-webkit-input-placeholder {
+   color: rgba(255,255,255,0.8);
+   font-size: 20px;
+ }
+ .mobile input#typeans{
+ display:none !important;
+ }
+
+ #info {
+  display: none;
+}
